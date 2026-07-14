@@ -14,5 +14,7 @@ while y==0:
         #print(name+" "+email+" "+mobile)
         contacts.append((name,email,mobile))
     if opt==2:
-        print(contacts)
+        #print(contacts)
+        for item in contacts:
+            print(item[0]+" "+item[1]+" "+item[2])
     y=int(input("Do You wnat to continue? press 0 for yes"))
