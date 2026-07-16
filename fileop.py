@@ -1,0 +1,7 @@
+# fp=open("test","w")
+# fp.write("Hello World")
+# fp.close()
+fp=open("test","r")
+data=fp.read()
+fp.close()
+print(data)
