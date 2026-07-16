@@ -17,4 +17,16 @@ while y==0:
         #print(contacts)
         for item in contacts:
             print(item[0]+" "+item[1]+" "+item[2])
+    if opt==3:
+        id=int(input("Enter the ID you want to delete"))
+        del contacts[id]
+        print("Contact Deleted")
+    if opt==4:
+        id=int(input("Enter the ID you want to update"))
+        name=input("Enter Name")
+        email=input("Enter Email")
+        mobile=input("Enter Mobile")
+        contacts[id]=(name,email,mobile)
+        print("Contact Updated")
+
     y=int(input("Do You wnat to continue? press 0 for yes"))
