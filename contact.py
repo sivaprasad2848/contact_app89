@@ -1,32 +1,12 @@
-y=0
-contacts=[]
+from helper import *
 while y==0:
-    print("---Menu----")
-    print("1->For insert contact")
-    print("2->For display contact")
-    print("3->For delete contact")
-    print("4->For update contact")
-    opt=int(input("Enter your option"))
+    opt=menu()
     if(opt==1):
-        name=input("Enter Name")
-        email=input("Enter Email")
-        mobile=input("Enter Mobile")
-        #print(name+" "+email+" "+mobile)
-        contacts.append((name,email,mobile))
+        create_contact()
     if opt==2:
-        #print(contacts)
-        for item in contacts:
-            print(item[0]+" "+item[1]+" "+item[2])
+        display_contact()
     if opt==3:
-        id=int(input("Enter the ID you want to delete"))
-        del contacts[id]
-        print("Contact Deleted")
+       del_contact()
     if opt==4:
-        id=int(input("Enter the ID you want to update"))
-        name=input("Enter Name")
-        email=input("Enter Email")
-        mobile=input("Enter Mobile")
-        contacts[id]=(name,email,mobile)
-        print("Contact Updated")
-
+        update_contact()
     y=int(input("Do You wnat to continue? press 0 for yes"))
