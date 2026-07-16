@@ -1,4 +1,5 @@
 from helper import *
+from fileop import *
 while y==0:
     opt=menu()
     if(opt==1):
@@ -10,3 +11,6 @@ while y==0:
     if opt==4:
         update_contact()
     y=int(input("Do You wnat to continue? press 0 for yes"))
+    if(y!=0):
+        c=get_contacts()
+        contact_write(c)

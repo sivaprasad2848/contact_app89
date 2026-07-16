@@ -1,7 +1,6 @@
-# fp=open("test","w")
-# fp.write("Hello World")
-# fp.close()
-fp=open("test","r")
-data=fp.read()
-fp.close()
-print(data)
+def contact_write(contacts):
+    fp=open("contact_details","a")
+    for item in contacts:
+        line=item[0]+"#"+item[1]+"#"+item[2]+"\n"
+        fp.write(line)
+    fp.close()

@@ -29,3 +29,5 @@ def menu():
     print("4->For update contact")
     op=int(input("Enter your option"))
     return op
+def get_contacts():
+    return contacts
