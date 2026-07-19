@@ -1,5 +1,6 @@
 from helper import *
 from fileop import *
+load_contact()
 while y==0:
     opt=menu()
     if(opt==1):

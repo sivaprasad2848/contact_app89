@@ -31,3 +31,11 @@ def menu():
     return op
 def get_contacts():
     return contacts
+def load_contact():
+    fp = open("contact_details", "r")
+
+    for line in fp:
+        data = line.strip().split("#")
+        contacts.append((data[0], data[1], data[2]))
+
+    fp.close()
