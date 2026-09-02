@@ -35,7 +35,7 @@ def load_contact():
     fp = open("contact_details", "r")
 
     for line in fp:
-        data = line.strip().split("#")
-        contacts.append((data[0], data[1], data[2]))
+        item = line.strip().split("#")
+        contacts.append((item[0], item[1], item[2]))
 
     fp.close()
