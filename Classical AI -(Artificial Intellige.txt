@@ -1,0 +1,35 @@
+Classical AI -(Artificial Intelligenece)
+----------------------------------------
+AI(Artificial Intelligence):- Machine mimic like humans.
+
+Intelligence:- The ability of a living being to take decision in a particular 
+context what action to be taken
+
+
+Intelligence is the ability of a living being to perceive its environment, 
+understand a given context, make decisions,and choose appropriate 
+actions to achieve a goal.
+
+
+Perception → Understanding → Reasoning → Decision → Action → Learning
+
+Perception: Detects fire and heat.
+Understanding: Realizes there is danger.
+Reasoning: Determines that staying there is unsafe.
+Decision: Decides to leave.
+Action: Moves away and possibly alerts others.
+Learning: Remembers what happened and may react faster next time.
+
+“Intelligence is the ability to understand a situation, 
+make an appropriate decision, and take action toward a goal.
+| Year | Milestone | Figure(s) |
+| --- | --- | --- |
+| **1956** | Dartmouth Conference — AI formally established | John McCarthy (Father of AI) |
+| **1958** | Lisp programming language created | John McCarthy |
+| **1966** | ELIZA chatbot developed | Joseph Weizenbaum |
+| **1980s** | Rise of Expert Systems | Edward Feigenbaum & others |
+| **1997** | IBM’s Deep Blue defeats Garry Kasparov | IBM Research |
+| **2011** | IBM Watson wins Jeopardy! | IBM |
+| **2012** | Breakthrough in Deep Learning (ImageNet) | Geoffrey Hinton, Yann LeCun |
+| **2016** | AlphaGo beats world champion Lee Sedol | DeepMind |
+| **2020s** | Generative AI (GPT, DALL·E, etc.) | OpenAI, Google DeepMind |
