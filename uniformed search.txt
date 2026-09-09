@@ -1,0 +1,10 @@
+uniformed search:
+1 breadth first search
+2. depth first search
+ 
+bfs:
+1. set a starting node
+2, initialize fifo que for starting node
+3. initialize the explored set too avoid reprocessing states 
+4. loop until the queue is empty
+5. expand the current node and neighbours
