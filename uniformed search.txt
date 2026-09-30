@@ -8,3 +8,92 @@ bfs:
 3. initialize the explored set too avoid reprocessing states 
 4. loop until the queue is empty
 5. expand the current node and neighbours
+
+dfs:
+1. exploring all possible connectivity
+algorithm of dfs:
+1. pick a starting node and mark it as visited
+2. push it on to the stack
+3. explore an unvisited neighbor
+4. backtrack when stuck 
+5. repeat until the stack is empty
+
+maze = [
+    ['S', 0, 1, 0],
+    [1,   0, 1, 0],
+    [1,   0, 0, 0],
+    [1,   1, 1, 'E']
+]
+alg:
+1.maze,row=0,col=0, visited=none
+
+Heuristic Search:
+it is a ai search terchnique that uses a heuristic search function 
+- an estimate of how clues a state is to goal 
+- to decide whic path is to explore first
+this will increase speed
+1, greedy best first search :
+	f(n)=g(n)+h(n)
+g(n) - actual cost
+f(n) - estimated cost from n- to goal
+S = 10
+A = 8
+B = 6
+C = 7
+D = 9
+E = 4
+F = 5
+G = 2
+H = 0
+step 			current node 				neighbours			heuristic value
+ 1					s						a,b					a=8,b=6
+2					b						e					e=4
+3					e						g					g=2
+4					g						h					h=0
+* greedy bfs doesnot distance already travel
+S = 12
+A = 10
+B = 7
+C = 8
+D = 6
+E = 5
+F = 9
+G = 7
+H = 4
+I = 6
+J = 3
+K = 2
+L = 0
+step 		current node 				neighbours			heuristic value
+1				s						a,b					a=10,b=7
+2				a,b						e,f					e=5,f=9,a=10
+3				e						f,a					f=9,a=10
+4				f						i					i=6,a=10
+5				i						k,a					k=2,a=10
+6				k						L,a					l=0,a=10
+7 				L						
+
+A* search algorithm
+- main difference between a* and greedy is a* calculate the total dis travel
+f(n)-g(n)+h(n)
+g(b)-1
+h(b)-7
+f(b) - 8
+f(s)=g(s)+h(s) =12
+f(a)=g(a)+h(a)=11
+f(e)=g(e)+h(e)=5
+f(f)=g(f)+h(f)=10 
+a-c,d
+f(a)=10
+f(c)=9
+f(d)=7
+f(h)=5 f(b)=10
+f(j)=4
+f(L)=0
+Adversarial Search and games:
+mini max algorithm :
+use for game dev like 2 plyer games
+one player tries to maximize the score while the other player tries to minimize the score 
+
+
+	
