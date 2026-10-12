@@ -1,0 +1,14 @@
+Expert System :
+	an ai program that design to solve complex problem and emulate the desition making ability in a specific domain
+key componnents:
+	knowledge base:
+			the system repository of a domain specific facts, rules and heuristics provided by human expert 
+	inference engine
+			the resonign mechanism that process a knowledge base against user input to deduce conclusion 
+			forward chaining 
+				we have known facts based on it we find new one	
+ 			backward chaining
+				we have a hypothesis or goal and working backward to see the facts support
+	User interface
+			it is interaction layer that ask a user question receive inputs  and provide conclusion
+	
